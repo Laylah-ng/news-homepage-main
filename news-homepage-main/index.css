@@ -1,3 +1,87 @@
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0px 15px 0px;
+}
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.logo {
+  width: 3rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  color: red;
+}
+.navbar li {
+  list-style: none;
+}
+.hamburger {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  .link {
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    gap: 1.3em;
+    width: 300px;
+    padding: 120px 20px;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+  .link {
+    display: flex;
+    gap: 1em;
+    font-size: clamp(1rem, 0.1rem + 0.1vw, 2rem);
+  }
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.web {
+  max-inline-size: 100%;
+  block-size: auto;
+  margin-top: 100px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
