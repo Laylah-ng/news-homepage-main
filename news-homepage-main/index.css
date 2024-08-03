@@ -124,6 +124,8 @@ h1 {
 .read:hover {
   background-color: black;
   color: white;
+  
+  
 }
 
 /* section 2 */
@@ -159,9 +161,9 @@ h1 {
   .dark p {
     font-size: clamp(1rem, 0.1rem + 0.1vw, 2rem);
   }
-  .read {
+  /* .read {
     font-size: clamp(1rem, 0.01rem + 0.01vw, 1.5rem);
-  }
+  } */
   h1{
     font-size: 2.5rem
     
@@ -193,35 +195,58 @@ h1 {
 }
 
 /* last section */
-/* 
+
 .last-container{
     margin-bottom: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:2rem
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
     
 }
-.last img{
+ .last img{
     width: 10rem;
-    height: 12em; 
-}
+    height: auto; 
+} 
 
 .last h2{
     color: var(--faint-red);
     font-size: 2rem;
 }
 .last p{
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-size: 1.2rem;
 }
 @media screen and (min-width: 900px) {
 .last{
      margin-top:10rem ;
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     display:flex;
+     gap: 1rem;
+     justify-content: center;
+     
+     
 }
-} */
+.last p{
+    
+    font-size: 1.1vw;
+    line-height: unset;
+    
+}
+.last h2{
+    font-size: 1em;
+    line-height: 0.2rem;
+}
+.last h3{
+    font-size: 1vw;
+    line-height: 0.7rem;
+    
+}
+.last img{
+   width:5rem;
+   height: auto;
+}
+.last-container{
+    gap:1rem
+}
+}
 
 /* footer */
 .attribution {
